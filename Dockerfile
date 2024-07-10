@@ -2,4 +2,4 @@ FROM nginx:latest
 
 RUN apt update -y
 
-EXPOSE 8082
+EXPOSE 8081
