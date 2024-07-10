@@ -23,7 +23,7 @@ jobs:
         env:
           REPOSIToRY: nginx
           IMAGE_TAG: latest
-        run:
+        run: 
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG .
 
